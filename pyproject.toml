@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "buyme-project"
+version = "0.1.0"
+description = ""
+authors = ["Omerh94 <omerhorovitz1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "buyme_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+selenium = "^4.8.3"
+selenium-actions = "^1.0.6"
+action = "^1.4.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
