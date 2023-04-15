@@ -24,7 +24,7 @@ time.sleep(3)
 driver.find_element(locate_with(By.XPATH, "//span[@class='text-link theme']")).click()
 
 driver.find_element(locate_with(By.XPATH, "//input[@placeholder='שם פרטי']")).send_keys('omer')
-driver.find_element(locate_with(By.XPATH, "//input[@placeholder='מייל']")).send_keys('cf5T@gmail.com')
+driver.find_element(locate_with(By.XPATH, "//input[@placeholder='מייל']")).send_keys('vf5T@gmail.com')
 driver.find_element(locate_with(By.XPATH, "//input[@placeholder='סיסמה']")).send_keys('Re123456')
 driver.find_element(locate_with(By.XPATH, "//input[@placeholder='אימות סיסמה']")).send_keys('Re123456')
 First_Name = 'omer'

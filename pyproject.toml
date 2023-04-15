@@ -11,6 +11,7 @@ python = "^3.11"
 selenium = "^4.8.3"
 selenium-actions = "^1.0.6"
 action = "^1.4.4"
+allure-pytest = "^2.13.1"
 
 
 [build-system]
