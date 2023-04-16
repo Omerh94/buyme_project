@@ -1,7 +1,5 @@
 import json
-import allure
 from selenium.webdriver.common.by import By
-from allure_commons.types import AttachmentType
 from base_page import BasePage
 import time
 
@@ -12,13 +10,13 @@ class four_page(BasePage):
     def send_text(self):
         json_file = open('data.json', 'r')
         data = json.load(json_file)
-        text1 = data['text1']
-        text2 = data['text2']
+        text1 = data['sender']
+        text2 = data['blessing']
         picture = data['picture']
-        phone1 = data['phone1']
-        phone2 = data['phone2']
-        Url = data['Furl']
-        self.driver.get(Url)
+        phone1 = data['sender_phone']
+        phone2 = data['recipt_phone']
+       # Url = data['Four_url']
+       # self.driver.get(Url)
         self.send_key(By.XPATH, "//input[@maxlength='25']", text1)
         time.sleep(1)
         blessing = self.driver.find_element(By.CLASS_NAME, "input-label-wrapper")

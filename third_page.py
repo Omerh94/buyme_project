@@ -13,7 +13,7 @@ class ThirdPage(BasePage):
         json_file = open('data.json', 'r')
         data = json.load(json_file)
         Price = data['Price']
-        # Url = data['Turl']
+        # Url = data['Third_url']
         # self.driver.get(Url)
         time.sleep(1)
         self.click_element(By.CSS_SELECTOR, "div[class=top]")
